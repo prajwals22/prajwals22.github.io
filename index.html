@@ -21,6 +21,7 @@
     <ul class="nav-menu" id="navMenu">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#realprojects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact" class="nav-hire">Hire Me</a></li>
     </ul>
@@ -30,6 +31,7 @@
   </div>
 </nav>
 
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
 <section id="hero">
   <div class="hero-shape hero-shape-a" aria-hidden="true"></div>
   <div class="hero-shape hero-shape-b" aria-hidden="true"></div>
@@ -86,16 +88,23 @@
           <div class="photo-ring"></div>
           <div class="photo-accent-dot"></div>
           <div class="photo-frame">
+            <!-- Profile photo: place your photo at img/Photo.jpg -->
             <img src="img/Photo.jpg" alt="Prajwal Shendge" class="profile-photo"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
             <div class="photo-fallback">PS</div>
           </div>
           <div class="float-card fc-tl">
-            <span>📊</span>
+            <!-- Power BI icon in float card -->
+            <span class="fc-icon-wrap">
+              <img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-BI.svg"
+                   alt="Power BI" width="22" height="22"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"/>
+              <span style="display:none;font-size:1.1rem;">📊</span>
+            </span>
             <div><strong>Power BI</strong><small>Expert</small></div>
           </div>
           <div class="float-card fc-br">
-            <span>✦</span>
+            <span style="font-size:1.2rem;">✦</span>
             <div><strong>4 Projects</strong><small>Delivered</small></div>
           </div>
         </div>
@@ -132,6 +141,7 @@
   </a>
 </section>
 
+<!-- ══ ABOUT ══════════════════════════════════════════════════ -->
 <section id="about">
   <div class="container">
     <div class="section-eyebrow" data-scroll>
@@ -149,6 +159,7 @@
           <div class="fact-row"><span class="fk">Company</span><span class="fv">Datachamps Pvt Ltd · June 2025 – Present</span></div>
         </div>
       </div>
+
       <div class="about-right" data-scroll>
         <h3 class="side-h">Education</h3>
         <div class="edu-card">
@@ -169,164 +180,138 @@
             <div class="edu-chips"><span>CGPA 8.5</span><span>Sangli</span></div>
           </div>
         </div>
+
         <h3 class="side-h" style="margin-top:28px">Tech Stack</h3>
         <div class="tech-grid">
 
-          <!-- Power BI — official yellow bars logo -->
+          <!-- Power BI: official yellow bars logo -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3"  y="16" width="5" height="13" rx="1" fill="#F2C811"/>
-                <rect x="10" y="10" width="5" height="19" rx="1" fill="#F2C811" opacity="0.85"/>
-                <rect x="17" y="4"  width="5" height="25" rx="1" fill="#F2C811" opacity="0.7"/>
-                <rect x="24" y="12" width="4" height="17" rx="1" fill="#F2C811" opacity="0.5"/>
-              </svg>
+              <img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-BI.svg"
+                   alt="Power BI" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#F2C811;color:#1a1a1a;font-weight:900;font-size:0.55rem;">PBI</span>
             </div>
             <span>Power BI</span>
           </div>
 
-          <!-- DAX — Microsoft gold "fx" style -->
+          <!-- DAX: custom clean badge matching screenshot -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="6" fill="#F2C811"/>
-                <text x="4" y="26" font-family="Arial Black,Arial,sans-serif" font-size="15" font-weight="900" fill="#1a1a1a" letter-spacing="-0.5">DAX</text>
+              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#F2C811"/>
+                <text x="5" y="27" font-family="'Arial Black',Arial,sans-serif" font-size="16" font-weight="900" fill="#1a1a1a">DAX</text>
               </svg>
             </div>
             <span>DAX</span>
           </div>
 
-          <!-- Power Query — blue funnel -->
+          <!-- Power Query: Microsoft blue funnel/filter icon matching screenshot -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="6" fill="#0078D4"/>
-                <path d="M8 10h20l-8 9v8l-4-2v-6L8 10z" fill="#fff"/>
+              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#0078D4"/>
+                <path d="M10 12h20l-8.5 10v9l-3-1.5V22L10 12z" fill="#ffffff"/>
               </svg>
             </div>
             <span>Power Query</span>
           </div>
 
-          <!-- Excel — official green X -->
+          <!-- Excel: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="6" fill="#217346"/>
-                <path d="M20 7h10v22H20V7z" fill="#185C37"/>
-                <path d="M4 7h16v22H4V7z" fill="#21A366"/>
-                <path d="M4 7h16v4H4z" fill="#107C41"/>
-                <text x="6" y="23" font-family="Arial Black,Arial,sans-serif" font-size="13" font-weight="900" fill="#fff">X</text>
-                <path d="M22 13l4 5-4 5M26 13l4 5-4 5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftexcel/microsoftexcel-plain.svg"
+                   alt="Excel" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#217346;color:#fff;font-weight:900;font-size:0.6rem;">XLS</span>
             </div>
             <span>Excel</span>
           </div>
 
-          <!-- HTML5 — official orange shield -->
+          <!-- HTML5: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <path d="M71 460L30 0h452l-41 460-185 52z" fill="#e44d26"/>
-                <path d="M256 472l149-41 35-394H256z" fill="#f16529"/>
-                <path d="M256 208h-67l-5-51h72v-50H129l13 147h114v-46zm0 135l-1.2.3-58-16-3.7-42h-50l7.3 82 105.3 29.2.3-.1V343z" fill="#ebebeb"/>
-                <path d="M256 208v46h62.6l-5.9 66.3L256 336.5v57.4l105.7-29.3 1.5-17.3 12.2-137.3 1.3-14.6H256zm0-101v50h122l1-11 2.5-28 1.3-11H256z" fill="#fff"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                   alt="HTML5" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#e44d26;color:#fff;font-weight:900;font-size:0.6rem;">H5</span>
             </div>
             <span>HTML5</span>
           </div>
 
-          <!-- CSS3 — official blue shield -->
+          <!-- CSS3: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <path d="M71 460L30 0h452l-41 460-185 52z" fill="#1572b6"/>
-                <path d="M256 472l149-41 35-394H256z" fill="#33a9dc"/>
-                <path d="M256 208H144l5 55h107v-55zm0-101H128l5 54h123v-54zm0 200h-1l-59.9-16.2-4.2-47.5H140l8 90.1 108 29.9v-.3z" fill="#ebebeb"/>
-                <path d="M256 362.8v-57.3l-.5.1-59.9-16.2-4.2-47.5H140l8 90.1 108 29.9v.9zm0-256v54h122.4l-1 11.3-22 247.4L256 435v57.3l2-.6L364 462l37-412H256v58.8z" fill="#fff"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                   alt="CSS3" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#1572b6;color:#fff;font-weight:900;font-size:0.6rem;">CSS</span>
             </div>
             <span>CSS3</span>
           </div>
 
-          <!-- JavaScript — official yellow square -->
+          <!-- JavaScript: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 630 630" xmlns="http://www.w3.org/2000/svg">
-                <rect width="630" height="630" fill="#f7df1e"/>
-                <path d="M423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z" fill="#323330"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                   alt="JavaScript" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#f7df1e;color:#323330;font-weight:900;font-size:0.6rem;">JS</span>
             </div>
             <span>JavaScript</span>
           </div>
 
-          <!-- TypeScript — official blue square -->
+          <!-- TypeScript: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="400" rx="20" fill="#3178c6"/>
-                <path d="M87.5 217.5V236h51v145h43V236h51v-18.5a839 839 0 0 0-1-18.7c-.4-.2-33-.3-72.5-.2l-71.8.2.3 18.7zm229.1-19.1c9.6 2.4 17 6.4 23.8 12.9 3.5 3.3 8.7 9.4 9.1 10.9.1.4-16.4 11.6-26.4 17.8-.4.2-1.8-1.3-3.5-3.7-5-7.1-10.2-10.2-18.2-10.7-11.7-.7-19.3 5.3-19.2 15.3 0 3 .4 4.7 1.7 7.2 2.6 5.5 7.5 8.8 22.8 15.5 28.1 12.1 40.2 20.1 47.7 31.5 8.4 12.8 10.3 33.2 4.5 48.4-6.4 16.4-22.2 27.5-44.6 31.2-6.9 1.2-23.3 1-30.6-.3-16.1-3-31.4-11-40.8-21.8-3.5-4-10.3-14.6-9.9-15.3.1-.2 1.7-1.1 3.4-2.1l13.8-8 10.6-6.2 2.3 3.4c3.2 4.9 10.2 11.6 14.4 13.8 12.2 6.5 28.9 5.6 37.2-1.9 3.5-3.1 5-6.3 5-11 0-4.2-.5-6-2.8-9.1-2.9-4-8.8-7.3-25.6-14.8-19.2-8.3-27.5-13.4-35-21.6-4.3-4.7-8.4-12.2-10.1-18.8-1.4-5.5-1.8-19.3-.6-24.8 4.3-20.6 19.2-34.9 40.7-39.6 6.9-1.5 23-.9 30.1.9z" fill="#fff"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                   alt="TypeScript" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#3178c6;color:#fff;font-weight:900;font-size:0.6rem;">TS</span>
             </div>
             <span>TypeScript</span>
           </div>
 
-          <!-- D3.js — official orange D3 logo -->
+          <!-- D3.js: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 10H50c27 0 42 12 42 30s-15 30-42 30H8V10z" fill="none" stroke="#F08030" stroke-width="8"/>
-                <path d="M22 25h22c13 0 22 6 22 15s-9 15-22 15H22V25z" fill="#F08030"/>
-                <text x="22" y="67" font-family="Arial Black,sans-serif" font-size="11" font-weight="900" fill="#F08030">3</text>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/d3js/d3js-original.svg"
+                   alt="D3.js" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#f68b1f;color:#fff;font-weight:900;font-size:0.6rem;">D3</span>
             </div>
             <span>D3.js</span>
           </div>
 
-          <!-- PHP — official purple elephant pill -->
+          <!-- PHP: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="50" cy="25" rx="48" ry="22" fill="#8892BE"/>
-                <path d="M22 15h7c5 0 8 2.5 8 7s-3 7-8 7h-3v6h-4V15zm4 11h2.5c2.5 0 4-1 4-4s-1.5-4-4-4H26v8z" fill="#fff"/>
-                <path d="M40 15h7c5 0 8 2.5 8 7s-3 7-8 7h-3v6h-4V15zm4 11h2.5c2.5 0 4-1 4-4s-1.5-4-4-4H44v8z" fill="#fff"/>
-                <path d="M57 15h4l2 9h.2l3-9h4l-5 20h-4l2-8h-.2l-3 8h-4l2-8h-.2l-3 8h-4z" fill="#fff"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                   alt="PHP" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#8892BE;color:#fff;font-weight:900;font-size:0.6rem;">PHP</span>
             </div>
             <span>PHP</span>
           </div>
 
-          <!-- MySQL — official dolphin blue -->
+          <!-- MySQL: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="18" cy="10" rx="13" ry="5" fill="#00758F"/>
-                <rect x="5" y="10" width="26" height="5"  fill="#00758F"/>
-                <rect x="5" y="15" width="26" height="5"  fill="#F29111"/>
-                <rect x="5" y="20" width="26" height="5"  fill="#00758F"/>
-                <rect x="5" y="25" width="26" height="5"  fill="#F29111"/>
-                <ellipse cx="18" cy="30" rx="13" ry="5" fill="#F29111"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                   alt="MySQL" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#00758F;color:#fff;font-weight:900;font-size:0.55rem;">SQL</span>
             </div>
             <span>MySQL</span>
           </div>
 
-          <!-- Python — official blue/yellow snake -->
+          <!-- Python: devicon CDN -->
           <div class="tech-badge">
             <div class="tb-icon">
-              <svg width="36" height="36" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="pyBlue" x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%">
-                    <stop offset="0%" stop-color="#387EB8"/>
-                    <stop offset="100%" stop-color="#366994"/>
-                  </linearGradient>
-                  <linearGradient id="pyYellow" x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%">
-                    <stop offset="0%" stop-color="#FFE052"/>
-                    <stop offset="100%" stop-color="#FFC331"/>
-                  </linearGradient>
-                </defs>
-                <path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.631v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#pyBlue)"/>
-                <path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.631v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.54 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#pyYellow)"/>
-              </svg>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                   alt="Python" class="tech-logo"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <span class="tech-logo-fb" style="display:none;background:#366994;color:#FFE052;font-weight:900;font-size:0.6rem;">PY</span>
             </div>
             <span>Python</span>
           </div>
@@ -337,10 +322,11 @@
   </div>
 </section>
 
+<!-- ══ EXPERIENCE ═══════════════════════════════════════════ -->
 <section id="experience">
   <div class="container">
     <div class="section-eyebrow" data-scroll>
-      <span class="ey-num">02</span><span class="ey-line"></span><span class="ey-text">Experience</span>
+      <span class="ey-num">02</span><span class="ey-line"></span><span class="ey-text">Industry Experience</span>
     </div>
     <div class="company-banner" data-scroll>
       <div class="cb-left">
@@ -368,6 +354,7 @@
         </div>
       </div>
     </div>
+
     <div class="projects-grid" data-scroll>
       <div class="proj-card">
         <div class="proj-num">01</div>
@@ -433,10 +420,101 @@
   </div>
 </section>
 
+<!-- ══ REAL-TIME PROJECTS ════════════════════════════════════ -->
+<section id="realprojects">
+  <div class="container">
+    <div class="section-eyebrow" data-scroll>
+      <span class="ey-num">03</span><span class="ey-line"></span><span class="ey-text">Real-Time Projects</span>
+    </div>
+    <div class="skills-header" data-scroll>
+      <h2>Live <em>Projects</em></h2>
+      <p>Real-world websites and applications built and deployed live on the web.</p>
+    </div>
+    <div class="rp-grid" data-scroll>
+
+      <div class="rp-card">
+        <div class="rp-card-top">
+          <div class="rp-num">01</div>
+          <a href="https://dimaapuneofficial.com/" target="_blank" rel="noopener" class="rp-live-badge">
+            <span class="rp-live-dot"></span>Live
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="rp-body">
+          <h3>Student Management Software</h3>
+          <p class="rp-client">Dai-Ichi Martial Arts Academy, Pune</p>
+          <a href="https://dimaapuneofficial.com/" target="_blank" rel="noopener" class="rp-url">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            dimaapuneofficial.com
+          </a>
+          <ul class="proj-list rp-list">
+            <li>Developed a real-time Student Management Software for academy operations and administration</li>
+            <li>Implemented Student Registration Module with complete CRUD operations</li>
+            <li>Developed Attendance Management and Student Payment Tracking systems</li>
+            <li>Built Admin Management with secure admin lock/access control system</li>
+            <li>Created Branch, Batch &amp; Exam Management modules</li>
+          </ul>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+        </div>
+      </div>
+
+      <div class="rp-card">
+        <div class="rp-card-top">
+          <div class="rp-num">02</div>
+          <a href="https://kulkarnidermatology.in/" target="_blank" rel="noopener" class="rp-live-badge">
+            <span class="rp-live-dot"></span>Live
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="rp-body">
+          <h3>Portfolio Website</h3>
+          <p class="rp-client">Dr. Omkar Kulkarni — Skin Specialist</p>
+          <a href="https://kulkarnidermatology.in/" target="_blank" rel="noopener" class="rp-url">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            kulkarnidermatology.in
+          </a>
+          <ul class="proj-list rp-list">
+            <li>Designed and developed a professional portfolio website for a skin specialist doctor</li>
+            <li>Created responsive and user-friendly UI/UX with modern web design practices</li>
+            <li>Developed informative sections including services, clinic information, and contact details</li>
+          </ul>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="rp-card">
+        <div class="rp-card-top">
+          <div class="rp-num">03</div>
+          <a href="https://kulkarnidiabetology.com/" target="_blank" rel="noopener" class="rp-live-badge">
+            <span class="rp-live-dot"></span>Live
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <div class="rp-body">
+          <h3>Portfolio Website</h3>
+          <p class="rp-client">Dr. Awani Paithankar-Kulkarni — Diabetes Specialist</p>
+          <a href="https://kulkarnidiabetology.com/" target="_blank" rel="noopener" class="rp-url">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            kulkarnidiabetology.com
+          </a>
+          <ul class="proj-list rp-list">
+            <li>Developed a responsive portfolio website for a diabetes specialist doctor</li>
+            <li>Focused on clean UI design, service presentation, and patient-friendly experience</li>
+            <li>Optimized website structure for professional online presence and accessibility</li>
+          </ul>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ════════════════════════════════════════════════ -->
 <section id="skills">
   <div class="container">
     <div class="section-eyebrow" data-scroll>
-      <span class="ey-num">03</span><span class="ey-line"></span><span class="ey-text">Skills</span>
+      <span class="ey-num">04</span><span class="ey-line"></span><span class="ey-text">Skills</span>
     </div>
     <div class="skills-header" data-scroll>
       <h2>Technical <em>Arsenal</em></h2>
@@ -491,10 +569,11 @@
   </div>
 </section>
 
+<!-- ══ CONTACT ═══════════════════════════════════════════════ -->
 <section id="contact">
   <div class="container">
     <div class="section-eyebrow" data-scroll>
-      <span class="ey-num">04</span><span class="ey-line"></span><span class="ey-text">Contact</span>
+      <span class="ey-num">05</span><span class="ey-line"></span><span class="ey-text">Contact</span>
     </div>
     <div class="contact-grid">
       <div class="contact-left" data-scroll>
@@ -562,27 +641,33 @@ navMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 const secs=document.querySelectorAll('section[id]');
 const nls=document.querySelectorAll('.nav-menu a:not(.nav-hire)');
 const secObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){nls.forEach(a=>a.classList.remove('active'));const m=document.querySelector(`.nav-menu a[href="#${e.target.id}"]`);if(m)m.classList.add('active');}});
-},{threshold:0.4});
+  entries.forEach(e=>{if(e.isIntersecting){nls.forEach(a=>a.classList.remove('active'));const m=document.querySelector('.nav-menu a[href="#'+e.target.id+'"]');if(m)m.classList.add('active');}});
+},{threshold:0.3});
 secs.forEach(s=>secObs.observe(s));
 
 /* Scroll reveal */
 const revObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in-view');}});
-},{threshold:0.08,rootMargin:'0px 0px -48px 0px'});
+},{threshold:0.06,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('[data-scroll]').forEach(el=>revObs.observe(el));
 
 /* Skill bars */
 const barObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.pct+'%';barObs.unobserve(e.target);}});
-},{threshold:0.3});
+},{threshold:0.2});
 document.querySelectorAll('.bar-fill').forEach(b=>barObs.observe(b));
 
 /* Project cards stagger */
 const projObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');projObs.unobserve(e.target);}});
-},{threshold:0.06});
+},{threshold:0.05});
 document.querySelectorAll('.proj-card').forEach((c,i)=>{c.style.transitionDelay=(i*0.07)+'s';projObs.observe(c);});
+
+/* Real-time project cards stagger */
+const rpObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');rpObs.unobserve(e.target);}});
+},{threshold:0.05});
+document.querySelectorAll('.rp-card').forEach((c,i)=>{c.style.transitionDelay=(i*0.1)+'s';rpObs.observe(c);});
 
 /* Smooth scroll */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
